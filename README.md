@@ -48,6 +48,8 @@ To get the appID and appKey, you have to log in [LeanCloud](https://leancloud.cn
 
 If you are a [Valine](https://valine.js.org/) comment module user, you can use the same app with Valine.
 
+In your app, please create a new Class named 'Applause'. Allow anyone to read and write. Otherwise, this widget will not work. Please add a site url whitelist in order to improve security.
+
 A clap image is provided in this repository, you should download it and link to it with `img_src`. You can use any image with url as you wish. A square image is recommended.
 
 Now, everything is done. Enjoy!
