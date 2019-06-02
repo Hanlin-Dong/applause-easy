@@ -40,13 +40,14 @@ class ApplauseEasy {
             query.first().then(
                 function (applause) {
                     if (applause) {
+                        console.log(applause);
                         let dom = document.getElementById(id + '-num');
-                        let fastIncrease = setInterval(function(){
+                            let fastIncrease = setInterval(function(){
                             dom.innerHTML = parseInt(dom.innerHTML) + 1;
-                            if (dom.innerHTML == applause.attributes.counter) {
+                            if (dom.innerHTML >= applause.attributes.counter) {
                                 clearInterval(fastIncrease)
                             }
-                        }, 3);
+                        }, 3)
                     } else {
                         let applause = new Applause();
                         applause.set('key', key);
