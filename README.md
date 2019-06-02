@@ -9,6 +9,8 @@ In personal websites, the site owners what to have a insight of the readers' int
 - It creates a button with the sum number of applause given in the past;
 - Readers can click the button infinite times;
 - on every certain times click, a user-defined function is triggered;
+- Use features provided by [Animate.css](https://daneden.github.io/animate.css/);
+- Inspired by an outstanding project [Valine](https://valine.js.org/);
 - Users should deploy it manually to LeanCloud; It's easy, and free.
 
 ## Useage
@@ -17,6 +19,12 @@ First, download the files `applause-easy.js` & `av.min.js`, add `script` tag to 
 ``` html
 <script src="av.min.js"></script>
 <script src="applause-easy.js"></script>
+```
+
+Also, the Animate.css style sheet. You can use CDN like
+
+``` html
+<link href="https://cdn.bootcss.com/animate.css/3.7.0/animate.min.css" rel="stylesheet">
 ```
 
 Then, inside `<body>`, create your own `<div>` with a prefered id.
