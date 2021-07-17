@@ -1,0 +1,37 @@
+.applause {
+    height: 100px;
+    position: relative;
+    padding: 20px;
+    margin: 10px auto 0;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.applause-number {
+    text-align: center;
+    padding: 6px 0;
+}
+
+.applause-container {
+    display: flex;
+}
+
+.applause-wrapper {
+    margin: 0 auto;
+    /* border: 1px solid #a1a1a1; */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: box-shadow 200ms, transform 200ms;
+}
+
+.applause-wrapper:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+    transform: scale(1.1, 1.1);
+}
+
+.applause-wrapper:active {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(0.95, 0.95);
+    transition: box-shadow 30ms, transform 30ms;
+}

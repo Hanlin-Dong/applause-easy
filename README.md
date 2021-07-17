@@ -9,33 +9,34 @@ In personal websites, the site owners what to have a insight of the readers' int
 - It creates a button with the sum number of applause given in the past;
 - Readers can click the button infinite times;
 - on every certain times click, a user-defined function is triggered;
-- Use features provided by [Animate.css](https://daneden.github.io/animate.css/);
 - Inspired by an outstanding project [Valine](https://valine.js.org/);
 - Users should deploy it manually to LeanCloud; It's easy, and free.
+
+## Change log
+
+Current version: V2.0
+
+### V2.0
+
+- Remove animate.css. Use original css file instead.
+- Reset the logic of number grow.
+
+### V1.0
+
+- Initial release.
+
 
 ## Useage
 First, download the files `applause-easy.js` & `av.min.js`, add `script` tag to your webpage.
 
 ``` html
+<head>
+<link rel="stylesheet" href="applause-easy.css">
+</head>
+<body>
+  <div id="applause-key"></div>
 <script src="av.min.js"></script>
 <script src="applause-easy.js"></script>
-```
-
-Also, the Animate.css style sheet. You can use CDN like
-
-``` html
-<link href="https://cdn.bootcss.com/animate.css/3.7.0/animate.min.css" rel="stylesheet">
-```
-
-Then, inside `<body>`, create your own `<div>` with a prefered id.
-
-``` html
-<div id="applause-key"></div>
-```
-
-Next, add some script.
-
-``` html
 <script>
   new ApplauseEasy({
     id: 'applause-easy',
@@ -50,6 +51,7 @@ Next, add some script.
     }
   })
 </script>
+</body>
 ```
 
 To get the appID and appKey, you have to log in [LeanCloud](https://leancloud.cn), and create an app.
